@@ -1,0 +1,2526 @@
+@import "variables";
+@import "mixing";
+
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  header{
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 1;
+  }
+/* ====================Start of top header======================= */
+.top {
+  height: 2rem;
+  width: 100%;
+  background-color: rgb(255, 208, 0);
+  @include flex(center);
+}
+
+.top > span {
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: underline;
+  @include cursor;
+}
+
+/* ====================End of top header======================= */
+/* ====================Start of mid header======================= */
+.mid {
+  height: 3.3rem;
+  width: 100%;
+  background-color: #030835;
+  @include flex(space-between);
+}
+
+.signUp {
+  height: 70%;
+  width: 34rem;
+  background:   linear-gradient(90deg,#154284,#181733);
+  margin-left: 10rem;
+  border-radius: 30px;
+  @include flex(center);
+  @include cursor;
+}
+
+.signUp > span{
+  font-size: 13px;
+  font-weight: bold;
+  font-family: $font1;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: white;
+
+  // color: rgb(221, 221, 40);
+}
+
+// .signUp > span :nth-child(2) {
+//   font-size: 13px;
+//   font-weight: bold;
+//   font-family: $font1;
+//   margin-right: 5px;
+//   margin-left: 10px;
+//   color: rgb(235, 235, 67);
+// }
+.signUp > .yellow{
+  color: rgb(250, 221, 56);
+}
+.signUp > .red {
+  height: 27%;
+  width: 10px;
+  border-radius: 10px;
+  background: red;
+  margin-right: 2px;
+  margin-top: 3px;
+}
+  
+.signUp > .blue {
+  height: 27%;
+  width: 10px;
+  border-radius: 10px;
+  background: blue;
+  margin-top: 3px;
+}
+
+.register {
+  @include flex(center);
+  height: 100%;
+  width: 27%;
+  margin-right: 30px;
+  padding: 0.4rem;
+  gap: 0.9rem;
+}
+
+.register > .login {
+  width: 30%;
+  height: 90%;
+  @include flex(center);
+  gap: 0.5rem;
+  @include cursor;
+}
+  
+.login > .login_logo {
+  width: 35%;
+  height: 70%;
+  border-radius: 1rem;
+  color: white;
+  background-color: rgb(11, 11, 139);
+  @include flex(center);
+  color: white;
+  font-size: 15px;
+}
+
+.login > .login-text {
+  width: 40%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: $barca-font;
+  color: white;
+  font-weight: 700;
+  @include cursor;
+  text-decoration: none;
+}
+.login:hover{
+  .login-text{
+  text-decoration: underline;
+  }
+}
+.register > .register2{
+  @include flex(center);
+  @include cursor;
+  width: 50%;
+  height: 60%;
+  background: linear-gradient(90deg, rgb(110, 17, 0), rgb(221, 28, 28) );
+  gap:0.9rem;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  // border: 2px solid ;
+}
+
+.register2 > img{
+  width: 20%;
+  height: 85%;
+  // color:white;
+  overflow: visible;   
+}
+
+.register_text{
+  height: 100%;
+  width: 40%;
+  font-size: 15px;
+  font-weight: 800;
+  font-family: $barca-font;
+  @include flex(space-between);
+  // display: flex;
+  // justify-content:space-between;
+  // align-items: center;
+  margin-right: 0.7rem;
+  color: white;
+  margin-bottom:0.2rem;
+  text-decoration: none;
+
+}
+
+.register > .lang{
+  @include cursor;
+  @include flex(center);
+  width: 10%;
+  height: 62%;
+  border-radius: 1rem;
+  background: rgb(34, 34, 83);
+  font-family: $barca-font;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  transition: all background-color 2s ease ;
+}
+.register > .lang:hover{
+  // background:linear-gradient(to top, rgb(245, 42, 42) 0%,rgb(214, 21, 21) 25%, rgb(155, 17, 17) 50%, rgb(170, 6, 6) 75%, rgb(129, 0, 0) 100%);
+  background: #ce1f1f;
+
+}
+
+.register > .www{
+  @include cursor;
+  @include flex(center);
+  width: 10%;
+  height: 62%;
+  border-radius: 1rem;
+  background: rgb(34, 34, 83);
+  font-family: $barca-font;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  transition: all background-color 2s ease ;
+  flex-direction: column;
+}
+
+
+.www > .text{
+  font-size: 9px;
+  color: white;
+  font-family: $barca-font;
+  font-weight: 400;
+}
+
+.register > .www:hover{
+  // background:linear-gradient(to top, rgb(245, 42, 42) 0%,rgb(214, 21, 21) 25%, rgb(155, 17, 17) 50%, rgb(170, 6, 6) 75%, rgb(129, 0, 0) 100%);
+  background: #ce1f1f;
+}
+/* ====================End of mid header======================= */
+
+/* ====================Start of bottom header======================= */
+
+.bottom{
+  width: 100%;
+  height: 4.4rem;
+  // border: 2px solid tomato;
+}
+
+.bottom > .big{
+  width: 100%;
+  height: 90%;
+  // border: 2px solid green;
+  background: rgb(26, 34, 70);
+  // position: relative;
+  // padding-inline:3rem 1rem;
+  @include flex(center);
+}
+
+.big > .logo{
+  @include cursor;
+  margin-left: 2rem;
+  
+}
+
+.big > .white_nav{
+  height: 100%;
+  width: auto;
+  // border: 1px solid red;
+  // position: absolute;
+  // left: 9.7rem;
+  @include flex(center);
+  margin-left: 0.9rem;
+  // margin-right: 25rem;
+
+}
+.white_nav > ul {
+  width: auto;
+  @include flex(center);
+  gap:3rem;
+}
+.white_nav > ul li{
+  color: whitesmoke;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  @include flex(center);
+  @include cursor;
+  gap: 0.2rem;
+  // text-size-adjust: 5rem;
+} 
+
+.big > .yellow_nav{
+  // border: 1px solid green;
+  height: 100%;
+  width: auto;
+  margin-left: 21rem;
+  // border: 1px solid red;
+  // position: absolute;
+  // right:10rem;
+  @include flex(center);
+}
+.yellow_nav > ul {
+  width: auto;
+  @include flex(center);
+  gap:3rem;
+}
+.yellow_nav > ul li{
+  color: rgb(255, 217, 0);
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  list-style: none;
+  @include flex(center);
+  @include cursor;
+
+  gap: 0.2rem;
+  // text-size-adjust: 5rem;
+}
+
+.big > .bar{
+  height: 60%;
+  width: 0.1rem;
+  background: gray;
+  margin-left:3rem;
+
+  // position: absolute;
+  // right:8.3rem;
+  // @include flex(center);
+
+}
+.big > .search_icon{
+
+  height: 90%;
+  width: 4.6rem;
+  // border: 2px solid red;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  font-weight: 300;
+  @include flex(center);
+  @include cursor;
+  margin-left: 0.2rem;
+}
+
+.big > .search_icon:hover{
+  background-color: rgb(114, 114, 114,0.3);
+}
+
+
+.bottom > .small{
+  width: 100%;
+  height: 10%; 
+  // border: 2px solid blue;
+  background:linear-gradient(to right, rgb(228, 39, 39) 0%,  rgb(50, 50, 124) 60%, purple 100%);
+
+}
+  
+/* ====================End of Bottom header======================= */
+
+
+/* ====================Start of Container ======================= */
+.container{
+  width: 100%;
+  height: 112vh;
+  // box-sizing: border-box;
+  background:rgb(24, 20, 48) ;
+  // opacity: .2;
+  z-index: -5;
+}
+
+.container > img:hover{
+  .text{
+    text-decoration: underline;
+  }
+}
+
+
+.container > img{
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 6rem;
+  left: 0;
+  display: block;
+  
+  // opacity: .5;
+  // z-index: -2;
+  // display: block;
+}
+
+// .container > img:hover{
+//   // @include cursor;
+//   .text{
+//     @include cursor;
+//     text-decoration: underline;
+//   }
+// }
+
+.container > .overlay{
+  width: 100%;
+  height: 50vh;
+  position:absolute;
+  // border: 2px solid green;
+  top: 25rem;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(14, 12, 32,0.1) 0%, rgb(24, 20, 48,1)48%, rgb(24, 20, 48) 100%);
+//  background-color: #181733;
+//  filter: blur(3px);
+}
+
+.container > img:hover{
+  @include cursor;
+  .container > .text{
+    text-decoration: underline;
+  }
+
+  .text:hover{
+    
+    text-decoration: underline;
+  }
+
+  // .overlay{
+  //   @include cursor;
+  // }  
+  
+  // .card{
+  //   cursor: default;
+  // }
+}
+
+.container > .blue_rectangle{
+  height: 23rem;
+  width: 2rem;
+  background-color: rgb(0, 36, 156);
+  position: absolute;
+  top: 12rem;
+}
+
+.container > .red_rectangle{
+  height: 15rem;
+  width: 2rem;
+  background-color: #ce1f1f;
+  position: absolute;
+  top: 20rem;
+  right: 0rem;
+}
+
+.container > .text{
+  width: 60rem;
+  height:5rem;
+  position:absolute;
+  font-size: 3rem;
+  // border: 2px solid red;
+  font-weight: 800;
+  font-family: $barca-font;
+  top: 29rem;
+  left: 12rem;
+  color: whitesmoke;
+  z-index: 0;
+  letter-spacing: -1px;
+  text-align: center;  
+}
+
+.container > .bottom_line{
+  height: 1rem;
+  width: 20%;
+  position: absolute;
+  top: 34rem;
+  left: 35rem;
+  // border: 2px solid red;
+  @include flex(center);
+  gap: 0.8rem;
+}
+.bottom_line > .yellow{
+  height: 0.6rem;
+  width: 0.6rem;
+  background-color: rgb(247, 242, 0);
+  margin-right: -0.5rem;
+} 
+
+.bottom_line > .type{
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 500;
+  color: rgb(247, 242, 0);
+  margin-right: 1rem;
+}
+.bottom_line > .right_bottom{
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 500;
+  color: rgb(161, 157, 157);
+
+}
+
+.container > .text:hover{
+  @include cursor;
+  text-decoration: underline;
+}
+.cards{
+  height: 13rem;
+  width: 95%;
+  @include flex(space-between);
+  position: absolute;
+  top: 37rem;
+  left: 2rem;
+}
+.card{
+  height: 100%;
+  width: 16%;
+  // border: 2px solid red;
+  // border-radius: 12px;
+  @include flex(space-between);
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  flex-direction:column ;
+  @include cursor;
+}
+
+.card:hover{
+  .container > .text{
+    text-decoration: none;
+  }
+}
+
+.card > img{
+  width: 100%;
+  height: 50%,;
+  overflow: hidden;
+}
+
+.card > .main_text{
+  color: whitesmoke;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: $barca-font;
+  text-align: center;
+  @include flex(space-evenly);
+  margin-bottom: 1rem;
+}
+
+.card > .last{
+  width: 100%;
+  height: 10%;
+  margin-top: 0.1rem;
+  @include flex(center);
+  gap: 0.5rem;
+}
+
+.last > .yellow_box{
+  height: 8px;
+  width: 8px;
+  background-color: rgb(228, 167, 0);
+}
+
+.last > span{
+  color: rgb(228, 167, 0);
+  font-size: 0.8rem;
+  font-weight: 300;
+  font-family: $barca-font;
+}
+
+.last > .time{
+  color: white;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 400;
+  margin-left: 3rem;
+}
+
+.card:nth-child(1){
+  background: #191b38;
+  border-radius: 7px;
+}
+.card:nth-child(2){
+  background: #1b1f42;
+}
+.card:nth-child(3){
+  background: #0d1241;
+}
+.card:nth-child(4){
+  background: #030835;
+  border-radius: 6px;
+}
+.card:nth-child(5){
+  background: #030835;
+}
+.card:nth-child(6){
+  background: #030835;
+}
+/* ====================End of Container ======================= */
+/* ====================Start of big_container ======================= */
+.big_container{
+  height: auto;
+  width: 100%;
+  background: linear-gradient(to bottom,rgb(131, 14, 14) 0%, rgb(19, 19, 65) 7%,rgb(24, 12, 53) 50%,rgb(19, 12, 48) 100% );
+  // backdrop-filter: blur(8px);
+  // opacity: .1;
+  display: flex;
+  flex-direction:column;
+  gap: 2rem;
+}
+
+.big_container > .partners{
+  height: 12rem;
+  width: 100%;
+  // border: 3px solid green;
+  // position: relative;
+  // top: 2rem;
+  // left: 0;
+  // margin-top: ;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.partners > span{
+  color: whitesmoke;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  margin-inline:2rem;
+}
+
+.partners > .bar{
+  height: 3.5rem;
+  width:1px;
+  background-color: white;
+  margin-bottom: 0.2rem;
+}
+
+.partners > img{
+  margin-bottom: 0.9rem;
+}
+
+.barcelona{
+  width: 95%;
+  height: 220vh;
+  background-color: white;
+  // border: 2px solid rgb(184, 0, 15);
+  align-self: center;
+  border-radius: 1rem 1rem 0 0;
+  padding: 2rem 0 2rem 2rem;
+  @include flex(none);
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.barcelona > .heading{
+  height: 3rem;
+  width: 97%;
+  // border: 2px red solid;
+  margin-right: 2rem ;
+  // display: flex;
+  // align-items:center;
+  // justify-content: space-between;
+  @include flex(space-between);
+}
+
+.heading > .lin{
+  width: 27rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: $barca-font;
+  @include text_lingrad;
+  // border: 1px solid green;
+  display: flex;
+  align-items: center;
+}
+
+.lin > .mat{
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: $barca-font;
+  margin-left: 0.7rem;
+}
+
+.heading > #time{
+  width: 20rem;
+  height: 100%;
+  font-size: 0.9rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  color: rgb(0, 0, 133);
+  @include flex(center);
+  gap: 0.5rem;
+  // border: 1px solid red;
+}
+
+#time > #arrow{
+  @include flex(center);
+  gap: 0.4rem;
+}
+
+#arrow > .left_arrow{
+  height: 2.4rem;
+  width: 2.4rem;
+  font-size:1rem;
+  // border: 1px solid red;
+  border-radius: 100%;
+  @include flex(center);
+  transition: opacity .3s ease-out;
+  background: transparent;
+  appearance: none;
+  color: black;
+}
+
+#arrow > .left_arrow:hover{
+  background-color:$b_blue;
+  color: whitesmoke;
+  @include cursor;
+}
+
+#arrow > .right_arrow{
+  height: 2.4rem;
+  width: 2.4rem;
+  font-size:1rem;
+  // border: 1px solid red;
+  border-radius: 100%;
+  @include flex(center);
+  transition: opacity .3s ease-out;
+  background: transparent;
+  appearance: none;
+  color: black;
+}
+
+#arrow > .right_arrow:hover{
+  background-color:$b_blue;
+  color: whitesmoke;
+  @include cursor;
+}
+
+.barcelona > .matches{
+  height: 20rem;
+  width: 100%;
+  margin-top: 1rem;
+  // border: 1px solid red;
+  display: flex;
+  gap: 0.5rem;
+}
+
+// ==================BOX1========================
+.matches > .box1{
+  height: 100%;
+  width: 22rem;
+  // border: 2px solid green;
+  background: url('/images/result-bg.jpeg');
+  // background-image: linear-gradient(230deg,rgba(24,23,53,.9),rgba(154,0,11,.9));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border: none;
+  @include flex(center);
+  // margin-bottom: 1rem ;
+  text-align: center;
+  // box-shadow: ;
+}
+
+.matches > .box1:hover{
+  @include cursor;
+}
+
+.dup_box1 {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(230deg,rgba(24,23,53,.9),rgba(154,0,11,.9));
+  text-align: center;
+  @include flex(center);
+}
+
+.dup_box1 > #va{
+  font-size: 2.2rem;
+  font-family: $barca-font;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+}
+
+.dup_box1 > #va > #res{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+// ==================BOX2========================
+.matches > .box2{
+  height: 100%;
+  width: 22rem;
+  // border: 2px solid blue;
+  // border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+  margin-top: -2px;
+  @include flex(space-between);
+  flex-direction: column;
+}
+
+.box2 > .blue_head{
+  height: 16%;
+  width: 98%;
+  background-color: $b_blue;
+  @include flex(flex-start);
+  gap: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+.blue_head > .num{
+  // width: 2rem;
+  // margin-right: -0.2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: $barca-font;
+  color: whitesmoke;
+}
+
+.blue_head > .day{
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: $barca-font;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  // margin-right: -0.2rem;  
+  // text-align: center;
+}
+.day > .month{
+  font-size: 1.1rem;
+  font-weight: 200;
+  font-family: $barca-font;
+  color: whitesmoke;
+}
+
+.box2 > .ucl{
+  width: auto;
+  height:2rem;
+  color: tomato;
+  font-size: 1rem;
+  font-family: 10rem;
+  font-family: $barca-font;
+  font-weight: 600;
+  text-transform: uppercase;
+  @include flex(center);
+  @include cursor;
+  margin: 0.5rem 0 -0.5rem 0;
+}
+
+.box2 > .ftime{
+  font-size: 0.7rem;
+  text-align: center;
+  font-family: $barca-font;
+  font-weight: 100;
+  color: rgb(141, 141, 141);
+  @include cursor;
+}
+
+.box2 > .vs{
+  height: 3rem;
+  width: 100%;
+  @include flex(space-around);
+  // border: 1px solid red;
+}
+
+.vs > .logo{
+  height: auto;
+  width: 14%;
+  // border: 1px solid blue;
+  // @include cursor;
+}
+
+.logo > img{
+  height: auto;
+  width: 100%;
+  @include cursor;
+}
+
+.vs > .score{
+  height: auto;
+  width: 25%;
+  background:linear-gradient(to bottom, rgb(68, 68, 146), rgb(21, 21, 61)) blue;
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  @include flex(center);
+  @include cursor;
+}
+
+.box2 > .styling{
+  @include flex(center);
+  gap: 0.5rem;
+  text-align: center;
+  // border: 1px solid red;
+  @include cursor;
+}
+
+.styling > .bold{
+  font-size: 1.3rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color: #222;
+}
+
+.box2 > .not_bold{
+  width: 100%;
+  height: 1rem;
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 300;
+  margin-top: -0.7rem;
+  @include flex(center);
+  @include cursor;
+}
+.box2 > .line{
+  height: 1px;
+  width: 100%;
+  background-color: rgb(184, 179, 179);
+}
+
+.box2 > .buttons{
+  height: 25%;
+  width: 100%;
+  // border: 2px solid red;
+  @include flex(center);
+  gap: 0.8rem;
+}
+
+.buttons > .club{
+  height: 2rem;
+  width: 44%;
+  background: rgb(21, 21, 66);
+  @include flex(center);
+  color: whitesmoke;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-image: linear-gradient(to right,red ,rgb(39, 39, 221));
+  border-image-slice: 1;
+  border-radius:5px;
+}
+
+.buttons > .club:hover{
+  
+  
+    background: linear-gradient(to right,rgb(245, 45, 45), rgb(59, 59, 187));
+    border-image: none;
+    height: 2.2rem;
+    // border: green solid 3px;
+    // width: 41%;
+    @include cursor;
+}
+
+.buttons > .report{
+  height: 2rem;
+  width: 45%;
+  background: #154284;
+  @include flex(center);
+  color: whitesmoke;
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.buttons > .report:hover{
+  
+  
+  background: linear-gradient(to right,rgb(245, 45, 45), rgb(38, 38, 173));
+  @include cursor;
+  height: 2.2rem;
+}
+// ==================BOX3========================
+.matches > .box3{
+  height: 100%;
+  width: 22rem;
+  // border: 2px solid blue;
+  // border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+  margin-top: -2px;
+  @include flex(space-between);
+  flex-direction: column;
+}
+
+.box3 > .blue_head{
+  height: 16%;
+  width: 98%;
+  background-color: $b_blue;
+  @include flex(flex-start);
+  gap: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+.blue_head > .num{
+  // width: 2rem;
+  // margin-right: -0.2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: $barca-font;
+  color: whitesmoke;
+}
+
+.blue_head > .day{
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: $barca-font;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  // margin-right: -0.2rem;  
+  // text-align: center;
+}
+.day > .month{
+  font-size: 1.1rem;
+  font-weight: 200;
+  font-family: $barca-font;
+  color: whitesmoke;
+}
+
+.box3 > .laliga{
+  width: 100%;
+  height:1rem;
+  color: tomato;
+  font-size: 1rem;
+  font-family: 10rem;
+  font-family: $barca-font;
+  font-weight: 600;
+  text-transform: uppercase;
+  @include flex(center);
+  @include cursor;
+}
+
+.box3 > .ftime{
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: -0.5rem;
+  font-family: $barca-font;
+  font-weight: 100;
+  color: rgb(141, 141, 141);
+  @include cursor;
+}
+
+.box3 > .vs{
+  height: 3rem;
+  width: 100%;
+  @include flex(space-around);
+  // border: 1px solid red;
+}
+
+.vs > .logo{
+  height: auto;
+  width: 14%;
+  // border: 1px solid blue;
+  // @include cursor;
+}
+
+.logo > img{
+  height: auto;
+  width: 100%;
+  @include cursor;
+}
+
+.vs > .score{
+  height: auto;
+  width: 25%;
+  background:linear-gradient(to bottom, rgb(68, 68, 146), rgb(21, 21, 61)) blue;
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  @include flex(center);
+  @include cursor;
+}
+
+.box3 > .styling{
+  @include flex(center);
+  gap: 0.5rem;
+  text-align: center;
+  // border: 1px solid red;
+  @include cursor;
+}
+
+.styling > .bold{
+  font-size: 1.3rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color: #222;
+}
+
+.box3 > .not_bold{
+  width: 100%;
+  height: 1rem;
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 300;
+  margin-top: -0.7rem;
+  @include flex(center);
+  @include cursor;
+}
+.box3 > .line{
+  height: 1px;
+  width: 100%;
+  background-color: rgb(184, 179, 179);
+}
+
+.box3 > .buttons{
+  height: 25%;
+  width: 100%;
+  // border: 2px solid red;
+  @include flex(center);
+  gap: 0.8rem;
+}
+
+.buttons > .club{
+  height: 2rem;
+  width: 44%;
+  background: rgb(21, 21, 66);
+  @include flex(center);
+  color: whitesmoke;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: 2px solid;
+  border-image: linear-gradient(to right,red ,rgb(39, 39, 221));
+  border-image-slice: 1;
+  border-radius:5px;
+}
+
+.buttons > .club:hover{  
+  background: linear-gradient(to right,rgb(245, 45, 45), rgb(59, 59, 187));
+  border-image: none;
+  height: 2.2rem;
+  // border: green solid 3px;
+  // width: 41%;
+  @include cursor;
+}
+
+.buttons > .report{
+  height: 2rem;
+  width: 45%;
+  background: #154284;
+  @include flex(center);
+  color: whitesmoke;
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.buttons > .report:hover{
+  background: linear-gradient(to right,rgb(245, 45, 45), rgb(38, 38, 173));
+  @include cursor;
+  height: 2.2rem;
+}
+// ==================BOX4========================
+.matches > .box4{
+  height: 100%;
+  width: 22rem;
+  // border: 2px solid blue;
+  // border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
+  margin-top: -2px;
+  @include flex(space-between);
+  flex-direction: column;
+}
+
+.box4 > .blue_head{
+  height: 16%;
+  width: 98%;
+  background-color: $b_blue;
+  @include flex(flex-start);
+  gap: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+.blue_head > .num{
+  // width: 2rem;
+  // margin-right: -0.2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: $barca-font;
+  color: whitesmoke;
+}
+
+.blue_head > .day{
+  font-size: 1rem;
+  font-weight: 800;
+  font-family: $barca-font;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  // margin-right: -0.2rem;  
+  // text-align: center;
+}
+.day > .month{
+  font-size: 1.1rem;
+  font-weight: 200;
+  font-family: $barca-font;
+  color: whitesmoke;
+}
+
+.box4 > .laliga{
+  width: 100%;
+  height:1rem;
+  color: tomato;
+  font-size: 1rem;
+  font-family: 10rem;
+  font-family: $barca-font;
+  font-weight: 600;
+  text-transform: uppercase;
+  @include flex(center);
+  @include cursor;
+}
+
+.box4 > .ftime{
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: -0.5rem;
+  font-family: $barca-font;
+  font-weight: 100;
+  color: rgb(141, 141, 141);
+  @include cursor;
+}
+
+.box4 > .vs{
+  height: 3rem;
+  width: 100%;
+  @include flex(space-around);
+  // border: 1px solid red;
+}
+
+.vs > .logo{
+  height: auto;
+  width: 14%;
+  // border: 1px solid blue;
+  // @include cursor;
+}
+
+.logo > img{
+  height: auto;
+  width: 100%;
+  @include cursor;
+}
+
+.vs > .timing{
+  height: auto;
+  width: 26%;
+  font-size: 2rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  @include text_lingrad;
+  @include flex(center);
+  @include cursor;
+}
+
+.box4 > .styling{
+  @include flex(center);
+  gap: 0.5rem;
+  text-align: center;
+  // border: 1px solid red;
+  @include cursor;
+}
+
+.styling > .bold{
+  font-size: 1.3rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color: #222;
+}
+
+.box4 > .not_bold{
+  width: 100%;
+  height: 1rem;
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 300;
+  margin-top: -0.7rem;
+  @include flex(center);
+  @include cursor;
+}
+.box4 > .line{
+  height: 1px;
+  width: 100%;
+  background-color: rgb(184, 179, 179);
+}
+
+.box4 > .button{
+  height: 25%;
+  width: 100%;
+  // border: 2px solid red;
+  @include flex(center);
+  gap: 0.8rem;
+}
+
+.button > .tickets{
+  height: 2rem;
+  width: 45%;
+  background: rgb(255, 196, 0);
+  @include flex(center);
+  color: black;
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.tickets:hover{
+  background-color: rgb(199, 18, 18);
+  color: whitesmoke;
+  @include cursor;
+  height: 2.2rem;
+}
+
+// =======================HORIZONTAL====================
+.barcelona > .horizontal{
+  margin-top: 1rem;
+  height:0.2rem;
+  width: 15%;
+  // border: 3px solid red;
+  // background-color: red;
+  @include flex(center);
+  gap: 0.2rem;
+}
+
+.horizontal > .hor_line{
+  height: 100%;
+  width: 30%;
+  background-color: rgb(201, 201, 201);
+}
+
+.hor_line:hover{
+  background-color: rgb(184, 21, 21);
+  @include cursor;
+}
+
+.barcelona > .border_line{
+  height: 0.1rem;
+  width: 102%;
+  margin-left: -2rem;
+  margin-bottom: 0.5rem;
+  background-color: rgb(236, 231, 231);
+}
+
+.barcelona > .team{
+  height: 29rem;
+  width: 100%;
+  @include flex(space-between);
+  flex-direction: column;
+}
+
+.team > .bar_tick{
+  font-size: 2rem;
+  font-family: $barca-font;
+  font-weight: 900;
+  @include text_lingrad;
+}
+
+.team > .photos{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  @include cursor;
+  position: relative;
+}
+
+.photos > img{
+  height: 11.2rem;
+  width: auto;
+}
+
+.barcelona > .store{
+  height: 29rem;
+  width: 100%;
+  @include flex(flex-start);
+  flex-direction: column;
+}
+
+.store > .store_text{
+  font-size: 2rem;
+  font-family: $barca-font;
+  font-weight: 900;
+  @include text_lingrad;
+}
+
+.shop{
+  height: 80%;
+  width: 100%;
+  @include flex(flex-start);
+  gap:0.6rem;
+}
+
+// ==================SHOP1=======================
+
+.shop > .shop1{
+  height: 100%;
+  width: 19rem;
+  // border: 2px solid red;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
+  @include cursor;
+}
+
+.shop1 > .lewa{
+  width: 100%;
+  height: auto;
+  border-radius: 7px 7px 0 0;
+}
+
+.kits{
+  height: 60%;
+  width: 100%;
+  @include flex(space-around);
+  // border: 2px solid red;
+}
+
+.kits > img{
+  height: auto;
+  width: 45%;
+}
+
+.shop_text{
+  height: 60%;
+  width: 100%;
+  @include flex(space-around);
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.kit{
+  width: 100%;
+  // height: 0.9rem;
+  // display: flex;
+  // align-self: flex-start;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 1000;
+  color: black ;
+}
+
+.customize{
+  width: 100%;
+  // @include flex(flex-start);
+  
+  font-size: 0.1rem;
+  font-weight: 100;
+  font-family: $barca-font;
+}
+
+.shop_text > #border_line{
+  height: 5;
+  width: 100%;
+  // background: rgb(206, 15, 15);/
+  border: 1px solid rgb(206, 206, 206);
+}
+
+.sho{
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 900;
+  color: blue;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+// ==================SHOP2=======================
+.shop > .shop2{
+  height: 100%;
+  width: 19rem;
+  // border: 2px solid red;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
+  @include cursor;
+}
+
+.shop2 > .culers{
+  width: 100%;
+  height: auto;
+  border-radius: 7px 7px 0 0;
+}
+
+.kits{
+  height: 60%;
+  width: 100%;
+  @include flex(space-around);
+  // border: 2px solid red;
+}
+
+.kits > img{
+  height: auto;
+  width: 45%;
+}
+
+.shop_text{
+  height: 60%;
+  width: 100%;
+  @include flex(space-around);
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.little{
+  width: 100%;
+  // height: 0.9rem;
+  // display: flex;
+  // align-self: flex-start;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 1000;
+  color: black ;
+  text-transform: uppercase ;
+}
+
+.customize{
+  width: 100%;
+  // @include flex(flex-start);
+  
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-family: $barca-font;
+}
+
+.shop_text > #border_line{
+  height: 5;
+  width: 100%;
+  background: rgb(206, 15, 15);
+  border: 1px solid red;
+}
+
+.sho{
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 900;
+  color: blue;
+  font-style: italic;
+  text-transform: uppercase;
+}
+// ==================SHOP3=======================
+
+.shop > .shop3{
+  height: 100%;
+  width: 19rem;
+  // border: 2px solid red;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
+  @include cursor;
+}
+
+.shop3 > .culers{
+  width: 100%;
+  height: auto;
+  border-radius: 7px 7px 0 0;
+}
+
+.kits{
+  height: 60%;
+  width: 100%;
+  @include flex(space-around);
+  // border: 2px solid red;
+}
+
+.kits > img{
+  height: auto;
+  width: 45%;
+}
+
+.shop_text{
+  height: 60%;
+  width: 100%;
+  @include flex(space-around);
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.kit{
+  width: 100%;
+  // height: 0.9rem;
+  // display: flex;
+  // align-self: flex-start;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 1000;
+  color: black ;
+}
+
+.customize{
+  width: 100%;
+  // @include flex(flex-start);
+  
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-family: $barca-font;
+}
+
+.shop_text > #border_line{
+  height: 5;
+  width: 100%;
+  background: rgb(206, 15, 15);
+  border: 1px solid red;
+}
+
+.sho{
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 900;
+  color: blue;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+// ==================SHOP4=======================
+.shop > .shop4{
+  height: 100%;
+  width: 19rem;
+  // border: 2px solid red;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
+  @include cursor;
+}
+
+.shop4 > .culers{
+  width: 100%;
+  height: auto;
+  border-radius: 7px 7px 0 0;
+}
+
+.kits{
+  height: 60%;
+  width: 100%;
+  @include flex(space-around);
+  // border: 2px solid red;
+}
+
+.kits > img{
+  height: auto;
+  width: 45%;
+}
+
+.shop_text{
+  height: 60%;
+  width: 100%;
+  @include flex(space-around);
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.little{
+  width: 100%;
+  // height: 0.9rem;
+  // display: flex;
+  // align-self: flex-start;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 1000;
+  color: black ;
+  text-transform: uppercase ;
+}
+
+.customize{
+  width: 100%;
+  // @include flex(flex-start);
+  
+  font-size: 0.8rem;
+  font-weight: 100;
+  font-family: $barca-font;
+}
+
+.shop_text > #border_line{
+  height: 5;
+  width: 100%;
+  background: rgb(206, 15, 15);
+  border: 1px solid red;
+}
+
+.sho{
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 900;
+  color: blue;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+/* ====================Start of NEWS======================= */
+.news{
+  width: 97%;
+  height: 100vh;
+  background-color: white;
+  align-self: center;
+  @include flex(none);
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 4rem;
+}
+
+.news > span{
+  height: 4%;
+  width: 100%;
+  font-size: 2rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  color: purple;
+  // border: 1px solid red;
+  @include flex(center);
+  text-transform: uppercase;
+}
+
+.news > .boxes{
+  height: 96.6%;
+  width: 96%;
+  // border: 2px solid red;
+  @include flex(flex-start);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start ;
+  gap: 0.9rem;
+  flex-wrap: wrap;
+}
+
+// ====================ARAUHO========================
+.boxes > .arauho{
+  height: 17rem;
+  width: 24%;
+  // border: red solid 2px;
+  @include flex(flex-start);
+  flex-direction:column;
+  gap:1rem;
+  box-shadow: 2px 0px 2px 2px rgb(2, 2, 2,0.2);
+  @include cursor;
+}
+
+.arauho > img{
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.arauho > .ara_text{
+  height: 4rem;
+  width: 90%;
+  // border: 2px solid red;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  // text-align: center;
+  // align-self: center;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.ara_footer{
+  height: 20%;
+  width: 100%;
+  // border: 2px solid green;
+  @include flex(space-around);
+
+}
+
+.ara_footer > .left_footer{
+  height: 100%;
+  width: 50%;
+  @include flex(flex-start);
+  gap: 0.5rem;
+}
+
+.left_footer > .redbox{
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: red;
+}
+
+.left_footer > .type{
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color: rgb(206, 0, 0);
+  text-transform: uppercase;
+}
+.right_footer{
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 400;
+  color: rgb(161, 156, 156);
+  // text-transform: uppercase;
+}
+
+// =================BASKETBALL====================
+.boxes > .basketball{
+  height: 17rem;
+  width: 24%;
+  // border: red solid 2px;
+  @include flex(flex-start);
+  flex-direction:column;
+  gap:1rem;
+  box-shadow: 2px 0px 2px 2px rgb(2, 2, 2,0.2);
+  @include cursor;
+}
+
+.basketball > img{
+  height: 60%;
+  width: 100%;
+  overflow: auto;
+}
+
+.basketball > .ara_text{
+  height: 4rem;
+  width: 90%;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+// =================Women====================
+.boxes > .women{
+  height: 17rem;
+  width: 24%;
+  // border: red solid 2px;
+  @include flex(flex-start);
+  flex-direction:column;
+  gap:1rem;
+  box-shadow: 2px 0px 2px 2px rgb(2, 2, 2,0.2);
+  @include cursor;
+}
+
+.women > img{
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.women > .ara_text{
+  height: 4rem;
+  width: 90%;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+// =================TRAINING====================
+.boxes > .training{
+  height: 17rem;
+  width: 24%;
+  // border: red solid 2px;
+  @include flex(flex-start);
+  flex-direction:column;
+  gap:1rem;
+  box-shadow: 2px 0px 2px 2px rgb(2, 2, 2,0.2);
+  @include cursor;
+}
+
+.training > img{
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.training > .ara_text{
+  height: 4rem;
+  width: 90%;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+// =================HOCKEY====================
+.boxes > .hockey{
+  height: 17rem;
+  width: 24%;
+  // border: red solid 2px;
+  @include flex(flex-start);
+  flex-direction:column;
+  gap:1rem;
+  box-shadow: 2px 0px 2px 2px rgb(2, 2, 2,0.2);
+  @include cursor;
+}
+
+.hockey > img{
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hockey > .ara_text{
+  height: 4rem;
+  width: 90%;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+// =================DEFEAT====================
+.boxes > .defeat{
+  height: 17rem;
+  width: 24%;
+  // border: red solid 2px;
+  @include flex(flex-start);
+  flex-direction:column;
+  gap:1rem;
+  box-shadow: 2px 0px 2px 2px rgb(2, 2, 2,0.2);
+  @include cursor;
+}
+
+.defeat > img{
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.defeat > .ara_text{
+  height: 4rem;
+  width: 90%;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+// =================ATHLETICS====================
+.boxes > .athletics{
+  height: 17rem;
+  width: 24%;
+  // border: red solid 2px;
+  @include flex(flex-start);
+  flex-direction:column;
+  gap:1rem;
+  box-shadow: 2px 0px 2px 2px rgb(2, 2, 2,0.2);
+  @include cursor;
+}
+
+.athletics > img{
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.athletics > .ara_text{
+  height: 4rem;
+  width: 90%;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+// =================RUGBY====================
+.boxes > .rugby{
+  height: 17rem;
+  width: 24%;
+  // border: red solid 2px;
+  @include flex(flex-start);
+  flex-direction:column;
+  gap:1rem;
+  box-shadow: 2px 0px 2px 2px rgb(2, 2, 2,0.2);
+  @include cursor;
+}
+
+.rugby > img{
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rugby > .ara_text{
+  height: 4rem;
+  width: 90%;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 0 1rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* ====================End of NEWS======================= */
+
+
+// =====================TROPHIES========================
+.trophies{
+  height: 6rem;
+  width: 95%;
+  background-color: #111025;
+  align-self: center;
+  @include flex(center);
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 2rem 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border: 1px solid rgb(25, 37, 70);
+}
+
+.trophies > .trophy{
+  min-height:6rem;
+  max-width: 22%;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  @include cursor;
+}
+
+.trophy > img{
+  max-width:  100%;
+  min-height: 100%;
+  overflow: hidden;
+  background-position: cover;
+  border-radius: 7px;
+}
+
+.text_background{
+  height: 0.1rem;
+  width: 90%;
+  padding: 1rem;
+  // border: 1px solid red;
+  background-color: black ;
+  position: absolute;
+  top: 30%;
+  @include flex(space-between);
+}
+
+
+// =================LALIGA======================
+
+.text_background > .laliga{
+  font-size: 0.8rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color:white;
+  text-transform: capitalize;
+}
+
+.text_background > .laliga:nth-child(2){
+  font-size: 4rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color:yellow;
+  text-transform: capitalize;
+  // margin-left: 5px; 
+  position: absolute;
+  top: -1.2rem;
+  left: 52%;
+}
+
+.text_background > .laliga:nth-child(3){
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  color:white;
+  text-transform: uppercase;
+}
+
+.text_background > .laliga:nth-child(4){
+  height: auto;
+  width: 4rem;
+  position: absolute;
+  top: -1.5rem;
+  left: 31%;
+}
+
+// =================UEFA CHAMPIONS LEAGUE======================
+.text_background > .ucl{
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color:white;
+  text-transform: capitalize;
+}
+.text_background > .ucl:nth-child(2){
+  font-size: 4rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color:yellow;
+  text-transform: capitalize;
+  // margin-left: 5px; 
+  position: absolute;
+  top: -1.2rem;
+  left: 62%;
+}
+
+.text_background > .ucl:nth-child(3){
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  color:white;
+  text-transform: uppercase;
+}
+
+.text_background > .ucl:nth-child(4){
+  height: 6.5rem;
+  width: auto;
+  position: absolute;
+  top: -2.3rem;
+  left: 40%;
+}
+
+// =================FIFA CLUB WORLD CUP======================
+.text_background > .club_world_cup{
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color:white;
+  text-transform: capitalize;
+}
+.text_background > .club_world_cup:nth-child(2){
+  font-size: 4rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color:yellow;
+  text-transform: capitalize;
+  // margin-left: 5px; 
+  position: absolute;
+  top: -1.2rem;
+  left: 56%;
+}
+
+.text_background > .club_world_cup:nth-child(3){
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  color:white;
+  text-transform: uppercase;
+}
+
+.text_background > .club_world_cup:nth-child(4){
+  height: 4.6rem;
+  width: auto;
+  position: absolute;
+  top: -1.4rem;
+  left: 40%;
+}
+// =================COPA DEL REY======================
+.text_background > .copa_del_rey{
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color:white;
+  text-transform: capitalize;
+}
+.text_background > .copa_del_rey:nth-child(2){
+  font-size: 4rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color:yellow;
+  text-transform: capitalize;
+  // margin-left: 5px; 
+  position: absolute;
+  top: -1.2rem;
+  left: 50%;
+}
+
+.text_background > .copa_del_rey:nth-child(3){
+  font-size: 0.6rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  color:white;
+  text-transform: uppercase;
+}
+
+.text_background > .copa_del_rey:nth-child(4){
+  height: 5.5rem;
+  width: auto;
+  position: absolute;
+  top: -1.7rem;
+  left: 28%;
+}
+
+// ====================SOCIAL MEDIA====================
+.social_media{
+  height: 10rem;
+  width:80%;
+  align-self: center;
+  padding: 1rem ;
+  @include flex(flex-start);
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.follow{
+  height: 3rem;
+  width: 50%;
+  // border: 1px solid red;
+  font-size: 1.3rem;
+  font-family: $barca-font;
+  font-weight: 800;
+  @include flex(center);
+  color: whitesmoke;
+}
+
+.medias{
+  height: 7rem;
+  width: 95%;
+  @include flex(center);
+  gap: 0.6rem;
+}
+
+// ===================FACEBOOK====================
+
+.fb{
+  height: 100%;
+  width: 15%;
+  background: #6610f2;
+  box-sizing: border-box;
+}
+
+.fb > img{
+  height: 5rem;
+  width: auto;
+  margin-left: -0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.fb > p{
+  color: whitesmoke;
+  margin-top: -0.8rem;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  margin-left: 0.7rem;
+}
+
+.fb:hover{
+  @include cursor;
+  border: 1px solid whitesmoke;
+}
+
+// ===================TWITTER====================
+.twitter{
+  height: 100%;
+  width: 15%;
+  background: #007cb6;
+  box-sizing: border-box;
+}
+
+.twitter > img{
+  height: 5rem;
+  width: auto;
+  margin-left: -0.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.twitter > p{
+  color: whitesmoke;
+  margin-top: -0.8rem;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  margin-left: 0.7rem;
+}
+
+.twitter:hover{
+  @include cursor;
+  border: 1px solid whitesmoke;
+}
+
+// ===================YOUTUBE====================
+.youtube{
+  height: 100%;
+  width: 15%;
+  background: rgb(131, 11, 11);
+  box-sizing: border-box;
+}
+
+.youtube > img{
+  height: 3rem;
+  width: auto;
+  // margin-left: -0.7rem;
+  margin-bottom: 1.7rem;
+  margin-top: 0.7rem;
+}
+
+.youtube > p{
+  color: whitesmoke;
+  margin-top: -0.8rem;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  margin-left: 0.7rem;
+
+}
+
+.youtube:hover{
+  @include cursor;
+  border: 1px solid whitesmoke;
+}
+
+// ===================INSTAGRAM====================
+.insta{
+  height: 100%;
+  width: 15%;
+  background: radial-gradient(circle farthest-corner at 35% 90%,#fec564,transparent 50%),radial-gradient(circle farthest-corner at 0 140%,#fec564,transparent 50%),radial-gradient(ellipse farthest-corner at 0 -25%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 20% -50%,#5258cf,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 0,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 60% -20%,#893dc2,transparent 50%),radial-gradient(ellipse farthest-corner at 100% 100%,#d9317a,transparent),linear-gradient(#6559ca,#bc318f 30%,#e33f5f 50%,#f77638 70%,#fec66d);
+  box-sizing: border-box;
+}
+
+.insta > img{
+  height: 3rem;
+  width: auto;
+  margin-left: 0.3rem;
+  margin-bottom: 1.7rem;
+  margin-top: 0.7rem;
+}
+
+.insta > p{
+  color: whitesmoke;
+  margin-top: -0.8rem;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  margin-left: 0.7rem;
+
+}
+
+.insta:hover{
+  @include cursor;
+  border: 1px solid whitesmoke;
+}
+
+// ===================TIKTOK====================
+.tiktok{
+  height: 100%;
+  width: 15%;
+  background: black;
+  box-sizing: border-box;
+}
+
+.tiktok > img{
+  height: 3rem;
+  width: auto;
+  margin-left: 0.7rem;
+  margin-bottom: 1.7rem;
+  margin-top: 0.7rem;
+}
+
+.tiktok > p{
+  color: whitesmoke;
+  margin-top: -0.8rem;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  margin-left: 0.7rem;
+}
+
+.tiktok:hover{
+  @include cursor;
+  border: 1px solid whitesmoke;
+}
+
+// ===================SPOTIFY====================
+.spotify{
+  height: 100%;
+  width: 15%;
+  background: rgb(17, 161, 17);
+  box-sizing: border-box;
+}
+
+.spotify > img{
+  height: 3rem;
+  width: auto;
+  // margin-left: -0.7rem;
+  margin-bottom: 1.7rem;
+  margin-top: 0.7rem;
+}
+
+.spotify > p{
+  color: whitesmoke;
+  margin-top: -0.8rem;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  margin-left: 0.7rem;
+
+}
+
+.spotify:hover{
+  @include cursor;
+  border: 1px solid whitesmoke;
+}
+
+// =======================ABOUT CLUB=====================
+.about_club{
+  height: 21rem;
+  width: 90%;
+  // border: 2px solid red;
+  align-self: center;
+  // @include flex(space-between);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+ .players{
+  // font-size: 1rem;
+  font-family: $barca-font;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.players > ul{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  // margin-top: 1rem;
+}
+.players > ul li{
+  font-size: 0.8rem;
+  list-style: none;
+  margin-left: -2.3rem;
+  font-weight: 100;
+  color: rgb(139, 139, 139);
+}
+
+.players > ul li:hover{
+  text-decoration: underline;
+  @include cursor;
+}
+
+// =======================COPYRIGHT======================
+.copyright{
+  height: 3rem;
+  width: 18%;
+  margin-left: 0.7rem;
+  @include flex(center);
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.copyright > img{
+  height: 100%;
+  width: auto;
+}
+
+.copyright > span{
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-family: $barca-font;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+// ====================TERMS=================
+.terms{
+  height: 2rem;
+  width: 85%;
+  // border: 2px solid red;
+  @include flex(space-between);
+  margin-left: 2rem;
+  // margin-top: 0.6rem;
+  margin-bottom: -0.9rem;
+}
+
+.terms > .left{
+  height: 100%;
+  width: 40%;
+}
+
+.left > p{
+  color: whitesmoke;
+  font-size: 0.9rem;
+  font-family: $barca-font;
+  font-weight: 100;
+}
+
+.left > p span{
+  font-weight: 700;
+}
+
+.terms > .right{
+  height: 100%;
+  width: 60%;
+  @include flex(flex-end);
+  gap: 0.4rem;
+}
+
+.ver_line{
+  height: 80%;
+  width: 1px;
+  background-color: rgb(182, 182, 182);
+}
+
+.right > span{
+  color: whitesmoke;
+  font-size: 0.7rem;
+  font-family: $barca-font;
+  
+}
+
+.right > span:hover{
+  @include cursor;
+  text-decoration: underline;
+}
+// ====================ENDDD=========================
+.end{
+  width: 100%;
+  height: 1.4rem;
+  background-color:red;
+  background: linear-gradient(to right, rgb(228, 39, 39) 0%, rgb(50, 50, 124) 60%, purple 100%);
+  // border: 2px solid red; 
+}
+
+/* ====================End of big_container ======================= */
+
+
+// ============================================FOR RESPONSIVE DESIGN==========================================================
+@media only screen and (max-width:400px){
+  header{
+    height: 50px;
+    width: 100%;
+    box-sizing:border-box ;
+    border:2px solid red;
+  }
+}
+

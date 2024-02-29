@@ -1,0 +1,16 @@
+@mixin flex($here){
+    display: flex;
+    justify-content: $here;
+    align-items: center;
+}
+
+@mixin cursor{
+    cursor: pointer;
+}
+
+@mixin text_lingrad{
+  background:linear-gradient(to right, rgb(218, 27, 27), rgb(6, 6, 129));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
