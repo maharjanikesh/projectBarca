@@ -21,11 +21,12 @@ body {
   @include flex(center);
 }
 
-.top > span {
+.top > a {
   font-size: 13px;
   font-weight: bold;
-  text-decoration: underline;
+  // text-decoration: underline;
   @include cursor;
+  color: rgb(0, 0, 0); 
 }
 
 /* ====================End of top header======================= */
@@ -104,9 +105,9 @@ body {
 }
   
 .login > .login_logo {
-  width: 35%;
-  height: 70%;
-  border-radius: 1rem;
+  width: 34%;
+  height: 80%;
+  border-radius: 50%;
   color: white;
   background-color: rgb(11, 11, 139);
   @include flex(center);
@@ -129,58 +130,90 @@ body {
   text-decoration: underline;
   }
 }
-.register > .register2{
+.register > .link{
+  height: 75%;
+  width:35%;
+  background: linear-gradient(to right,rgb(170, 0, 0), rgb(243, 52, 52));
+  border-radius: 5px;
   @include flex(center);
-  @include cursor;
-  width: 50%;
-  height: 60%;
-  background: linear-gradient(90deg, rgb(110, 17, 0), rgb(221, 28, 28) );
-  gap:0.9rem;
-  padding: 0.5rem;
-  border-radius: 0.3rem;
-  // border: 2px solid ;
-}
-
-.register2 > img{
-  width: 20%;
-  height: 85%;
-  // color:white;
-  overflow: visible;   
-}
-
-.register_text{
-  height: 100%;
-  width: 40%;
-  font-size: 15px;
-  font-weight: 800;
-  font-family: $barca-font;
-  @include flex(space-between);
-  // display: flex;
-  // justify-content:space-between;
-  // align-items: center;
-  margin-right: 0.7rem;
-  color: white;
-  margin-bottom:0.2rem;
+  gap: 12px;
   text-decoration: none;
+}
+.link > img {
+  width: 20%;
+  height:auto;
+}
+.link > .register_text{
+  color: whitesmoke;
+  font-size: 1rem;
+  font-family: $barca-font;
+  font-weight: 700;
 
 }
+// .register > a{
+//   // @include flex(center);
+//   @include cursor;
+//   width: 50%;
+//   height: 60%;
+//   background: linear-gradient(90deg, rgb(110, 17, 0), rgb(221, 28, 28) );
+//   gap:0.9rem;
+//   padding: 0.5rem;
+//   border-radius: 0.3rem;
+//   // border: 2px solid green;
+// }
+// // a > .register2{
+// //   @include flex(center);
+// //   // @include cursor;
+// //   width: 100%;
+// //   height: 100%;
+// //   border: 2px soid yellow;
+// //   // background: linear-gradient(90deg, rgb(110, 17, 0), rgb(221, 28, 28) );
+// //   // gap:0.9rem;
+// //   // padding: 0.5rem;
+// //   // border-radius: 0.3rem;
+// // }
+
+// a > img{
+//   width: 20%;
+//   height:auto;
+//   // color:white;
+//   overflow: visible;  
+//   border: 2px solid red; 
+// }
+
+// .register_text{
+//   height: 100%;
+//   width: 40%;
+//   font-size: 15px;
+//   font-weight: 800;
+//   font-family: $barca-font;
+//   @include flex(space-between);
+//   // display: flex;
+//   // justify-content:space-between;
+//   // align-items: center;
+//   margin-right: 0.7rem;
+//   color: white;
+//   margin-bottom:0.2rem;
+//   text-decoration: none;
+
+// }
 
 .register > .lang{
   @include cursor;
   @include flex(center);
   width: 10%;
-  height: 62%;
-  border-radius: 1rem;
+  height: 65%;
+  border-radius: 100%;
   background: rgb(34, 34, 83);
   font-family: $barca-font;
   font-weight: 700;
   font-size: 14px;
   color: white;
-  transition: all background-color 2s ease ;
 }
 .register > .lang:hover{
   // background:linear-gradient(to top, rgb(245, 42, 42) 0%,rgb(214, 21, 21) 25%, rgb(155, 17, 17) 50%, rgb(170, 6, 6) 75%, rgb(129, 0, 0) 100%);
   background: #ce1f1f;
+  transition: all 0.5s ease-in-out ;
 
 }
 
@@ -188,7 +221,7 @@ body {
   @include cursor;
   @include flex(center);
   width: 10%;
-  height: 62%;
+  height: 65%;
   border-radius: 1rem;
   background: rgb(34, 34, 83);
   font-family: $barca-font;
@@ -210,6 +243,8 @@ body {
 .register > .www:hover{
   // background:linear-gradient(to top, rgb(245, 42, 42) 0%,rgb(214, 21, 21) 25%, rgb(155, 17, 17) 50%, rgb(170, 6, 6) 75%, rgb(129, 0, 0) 100%);
   background: #ce1f1f;
+  transition: all 0.5s ease-in-out ;
+
 }
 /* ====================End of mid header======================= */
 
@@ -330,7 +365,7 @@ body {
   width: 100%;
   height: 10%; 
   // border: 2px solid blue;
-  background:linear-gradient(to right, rgb(228, 39, 39) 0%,  rgb(50, 50, 124) 60%, purple 100%);
+  background: linear-gradient(90deg, #cd122d 0, #154284); 
 
 }
   
@@ -1355,6 +1390,11 @@ body {
 .photos > img{
   height: 11.2rem;
   width: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.photos > img:hover { 
+  scale: 111%;
 }
 
 .barcelona > .store{
@@ -2505,9 +2545,9 @@ body {
 // ====================ENDDD=========================
 .end{
   width: 100%;
-  height: 1.4rem;
+  height: 1rem;
   background-color:red;
-  background: linear-gradient(to right, rgb(228, 39, 39) 0%, rgb(50, 50, 124) 60%, purple 100%);
+  background: linear-gradient(90deg, #cd122d 0, #154284);
   // border: 2px solid red; 
 }
 
@@ -2522,5 +2562,20 @@ body {
     box-sizing:border-box ;
     border:2px solid red;
   }
+
+  header > .top{
+    @include flex(center);
+  }
+
+  header > .mid{
+    @include flex(space-between);
+  }
+  // .container{
+  //   height: 200vh;
+  //   width: 100%;
+  //   aspect-ratio: 16/9;
+  //   box-sizing: border-box;
+  // }
+
 }
 
