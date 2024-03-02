@@ -269,15 +269,11 @@ body {
 .big > .logo{
   @include cursor;
   margin-left: 2rem;
-  
 }
 
 .big > .white_nav{
   height: 100%;
-  width: auto;
-  // border: 1px solid red;
-  // position: absolute;
-  // left: 9.7rem;
+  width:auto;
   @include flex(center);
   margin-left: 0.9rem;
   // margin-right: 25rem;
@@ -297,11 +293,20 @@ body {
   text-decoration: none;
   list-style: none;
   @include flex(center);
-  @include cursor;
+  // @include cursor;
   gap: 0.2rem;
   // text-size-adjust: 5rem;
+}
+.white_nav > ul li:nth-child(1):hover ul li:nth-child(2){
+  @include cursor;
+  color: #9c9c9c;
+  // .white_nav > ul li:nth-child(2){
+  //   color:rgb(53, 51, 51);
+  // }
+  // .white_nav > ul li:nth-child(3){
+  //   color:rgb(53, 51, 51);
+  // }
 } 
-
 .big > .yellow_nav{
   // border: 1px solid green;
   height: 100%;
@@ -418,6 +423,7 @@ body {
   top: 25rem;
   left: 0;
   background: linear-gradient(to bottom, rgba(14, 12, 32,0.1) 0%, rgb(24, 20, 48,1)48%, rgb(24, 20, 48) 100%);
+  z-index: 0;
 //  background-color: #181733;
 //  filter: blur(3px);
 }
@@ -522,12 +528,7 @@ body {
 .card{
   height: 100%;
   width: 16%;
-  // border: 2px solid red;
-  // border-radius: 12px;
   @include flex(space-between);
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
   flex-direction:column ;
   @include cursor;
 }
@@ -543,7 +544,6 @@ body {
   height: 50%,;
   overflow: hidden;
 }
-
 .card > .main_text{
   color: whitesmoke;
   font-size: 1rem;
@@ -617,8 +617,10 @@ body {
 }
 
 .big_container > .partners{
-  height: 12rem;
+  height: 5rem;
   width: 100%;
+  margin-top: 5rem;
+  margin-bottom: -1.2rem;
   // border: 3px solid green;
   // position: relative;
   // top: 2rem;
@@ -1413,23 +1415,22 @@ body {
 
 .shop{
   height: 80%;
-  width: 100%;
+  width: 99%;
   @include flex(flex-start);
-  gap:0.6rem;
+  gap:0.8rem;
+  margin-left: -0.8rem;
 }
-
-// ==================SHOP1=======================
-
-.shop > .shop1{
+.shop > .barca_store{
   height: 100%;
-  width: 19rem;
-  // border: 2px solid red;
+  width: 24%;
   border-radius: 5px 5px 0 0;
   box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
   @include cursor;
 }
 
-.shop1 > .lewa{
+// ==================SHOP1=======================
+
+.barca_store > .lewa{
   width: 100%;
   height: auto;
   border-radius: 7px 7px 0 0;
@@ -1492,16 +1493,16 @@ body {
 }
 
 // ==================SHOP2=======================
-.shop > .shop2{
-  height: 100%;
-  width: 19rem;
-  // border: 2px solid red;
-  border-radius: 5px 5px 0 0;
-  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
-  @include cursor;
-}
+// .shop > .shop2{
+//   height: 100%;
+//   width: 24%;
+//   // border: 2px solid red;
+//   border-radius: 5px 5px 0 0;
+//   box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
+//   @include cursor;
+// }
 
-.shop2 > .culers{
+.barca_store > .culers{
   width: 100%;
   height: auto;
   border-radius: 7px 7px 0 0;
@@ -1565,16 +1566,16 @@ body {
 }
 // ==================SHOP3=======================
 
-.shop > .shop3{
-  height: 100%;
-  width: 19rem;
-  // border: 2px solid red;
-  border-radius: 5px 5px 0 0;
-  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
-  @include cursor;
-}
+// .shop > .shop3{
+//   height: 100%;
+//   width: 24%;
+//   // border: 2px solid red;
+//   border-radius: 5px 5px 0 0;
+//   box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
+//   @include cursor;
+// }
 
-.shop3 > .culers{
+.barca_store > .culers{
   width: 100%;
   height: auto;
   border-radius: 7px 7px 0 0;
@@ -1637,16 +1638,16 @@ body {
 }
 
 // ==================SHOP4=======================
-.shop > .shop4{
-  height: 100%;
-  width: 19rem;
-  // border: 2px solid red;
-  border-radius: 5px 5px 0 0;
-  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
-  @include cursor;
-}
+// .shop > .barca_store{
+//   height: 100%;
+//   width: 24%;
+//   // border: 2px solid red;
+//   border-radius: 5px 5px 0 0;
+//   box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.5);
+//   @include cursor;
+// }
 
-.shop4 > .culers{
+.barca_store > .culers{
   width: 100%;
   height: auto;
   border-radius: 7px 7px 0 0;
@@ -1674,9 +1675,6 @@ body {
 
 .little{
   width: 100%;
-  // height: 0.9rem;
-  // display: flex;
-  // align-self: flex-start;
   font-size: 1rem;
   font-family: $barca-font;
   font-weight: 1000;
@@ -1685,9 +1683,7 @@ body {
 }
 
 .customize{
-  width: 100%;
-  // @include flex(flex-start);
-  
+  width: 100%;  
   font-size: 0.8rem;
   font-weight: 100;
   font-family: $barca-font;
@@ -2251,7 +2247,7 @@ body {
 .fb{
   height: 100%;
   width: 15%;
-  background: #6610f2;
+  background: #3b5998;
   box-sizing: border-box;
 }
 
@@ -2554,28 +2550,96 @@ body {
 /* ====================End of big_container ======================= */
 
 
-// ============================================FOR RESPONSIVE DESIGN==========================================================
-@media only screen and (max-width:400px){
-  header{
-    height: 50px;
+// ============================================MEDIA QUERIES==========================================================
+@media only screen and (max-width:1536px){
+  .container{
+    height: 100vh;
     width: 100%;
-    box-sizing:border-box ;
-    border:2px solid red;
-  }
 
-  header > .top{
+  }
+  .overlay{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+  }
+  .logo{
+    margin-right: 1rem;
+  }
+  .white_nav{
+    height: 100%;
+    width: auto;
+    margin-inline:10rem;
     @include flex(center);
   }
-
-  header > .mid{
-    @include flex(space-between);
+  .white_nav ul li{
+    width: auto;
+    height: auto;
+    display: flex;
   }
-  // .container{
-  //   height: 200vh;
-  //   width: 100%;
-  //   aspect-ratio: 16/9;
-  //   box-sizing: border-box;
+  .container .text{
+    left: 19%;
+  }
+  .big_container{
+    width: 100%;
+    height: auto;
+    padding-top: 2rem;
+  }
+  // .partners{
+  //   // height: 10rem;
   // }
+  .photos{
+    height: auto;
+    width: 100%;
+    padding:2rem;
 
+  }
+  .photos > img{
+    height: 49%;
+    width: 23.6%;
+  }
 }
 
+// @media only screen and (max-width:){
+  
+// }
+
+
+
+
+
+
+// @media only screen and (max-width: 400px){
+//   header{
+//     height: 50px;
+//     width: 100%;
+//     // display: none;
+//     // box-sizing:border-box ;
+//     // border:2px solid red;
+//   }
+
+//   header > .top{
+//     @include flex(none);
+//   }
+
+//   header > .mid{
+//     // @include flex(spac e-between);
+//     display: none !important;
+//   }
+//   .container{
+//     // height: 200vh;
+//     // width: 100%;
+//     // aspect-ratio: 16/9;
+//     // box-sizing: border-box;
+//     display: none;
+//   }
+//   .container > .text{
+//     font-size: 1rem;
+//     overflow: hidden;
+//   }
+//   .big_container {
+//     display: none;
+//     overflow: hidden;
+//   }
+
+// }
