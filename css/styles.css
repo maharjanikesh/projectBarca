@@ -325,10 +325,10 @@ header {
 /* ====================End of Bottom header======================= */
 /* ====================Start of Container ======================= */
 .container {
-  width: 100%;
+  width: auto;
   height: 112vh;
   background: rgb(24, 20, 48);
-  z-index: -5;
+  box-sizing: border-box;
 }
 
 .container > img:hover .text {
@@ -341,16 +341,15 @@ header {
   position: relative;
   top: 6rem;
   left: 0;
-  display: block;
 }
 
 .container > .overlay {
   width: 100%;
-  height: 50vh;
+  height: 12%;
   position: absolute;
-  top: 25rem;
+  top: 6.6%;
   left: 0;
-  background: linear-gradient(to bottom, rgba(14, 12, 32, 0.1) 0%, rgb(24, 20, 48) 48%, rgb(24, 20, 48) 100%);
+  background: linear-gradient(to bottom, rgba(14, 12, 32, 0.1) 0%, rgb(24, 20, 48) 69.7%, rgb(24, 20, 48) 100%);
   z-index: 0;
 }
 
@@ -442,7 +441,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 37rem;
+  top: 14%;
   left: 2rem;
 }
 
@@ -452,8 +451,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: column;
   cursor: pointer;
+  flex-direction: column;
 }
 
 .card:hover .container > .text {
@@ -540,7 +539,7 @@ header {
 .big_container {
   height: auto;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(131, 14, 14) 0%, rgb(19, 19, 65) 7%, rgb(24, 12, 53) 50%, rgb(19, 12, 48) 100%);
+  background: linear-gradient(to bottom, rgb(131, 14, 14) 0%, rgb(19, 19, 65) 9.6%, rgb(24, 12, 53) 50%, rgb(19, 12, 48) 100%);
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -549,8 +548,8 @@ header {
 .big_container > .partners {
   height: 5rem;
   width: 100%;
-  margin-top: 5rem;
-  margin-bottom: -1.2rem;
+  margin-top: 8.5rem;
+  margin-bottom: -1rem;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -2504,11 +2503,6 @@ header {
     width: 100%;
     height: auto;
     padding-top: 2rem;
-  }
-  .photos {
-    height: auto;
-    width: 100%;
-    padding: 2rem;
   }
   .photos > img {
     height: 49%;
