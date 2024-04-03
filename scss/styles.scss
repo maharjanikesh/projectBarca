@@ -7,13 +7,13 @@ body {
     position: relative;
   }
   
-  header{
+  nav{
     position: fixed;
     box-sizing: border-box;
     width: 100%;
     z-index: 1;
   }
-/* ====================Start of top header======================= */
+/* ====================Start of top Navbar======================= */
 .top {
   height: 2rem;
   width: 100%;
@@ -29,8 +29,8 @@ body {
   color: rgb(0, 0, 0); 
 }
 
-/* ====================End of top header======================= */
-/* ====================Start of mid header======================= */
+/* ====================End of top Navbar======================= */
+/* ====================Start of mid Navbar======================= */
 .mid {
   height: 3.3rem;
   width: 100%;
@@ -42,7 +42,7 @@ body {
   height: 70%;
   width: 34rem;
   background:   linear-gradient(90deg,#154284,#181733);
-  margin-left: 10rem;
+  margin-left: 7.2rem;
   border-radius: 30px;
   @include flex(center);
   @include cursor;
@@ -55,18 +55,8 @@ body {
   margin-right: 5px;
   margin-left: 5px;
   color: white;
-
-  // color: rgb(221, 221, 40);
 }
 
-// .signUp > span :nth-child(2) {
-//   font-size: 13px;
-//   font-weight: bold;
-//   font-family: $font1;
-//   margin-right: 5px;
-//   margin-left: 10px;
-//   color: rgb(235, 235, 67);
-// }
 .signUp > .yellow{
   color: rgb(250, 221, 56);
 }
@@ -134,7 +124,7 @@ body {
   height: 75%;
   width:35%;
   background: linear-gradient(to right,rgb(170, 0, 0), rgb(243, 52, 52));
-  border-radius: 5px;
+  border-radius: 5px; 
   @include flex(center);
   gap: 12px;
   text-decoration: none;
@@ -150,54 +140,6 @@ body {
   font-weight: 700;
 
 }
-// .register > a{
-//   // @include flex(center);
-//   @include cursor;
-//   width: 50%;
-//   height: 60%;
-//   background: linear-gradient(90deg, rgb(110, 17, 0), rgb(221, 28, 28) );
-//   gap:0.9rem;
-//   padding: 0.5rem;
-//   border-radius: 0.3rem;
-//   // border: 2px solid green;
-// }
-// // a > .register2{
-// //   @include flex(center);
-// //   // @include cursor;
-// //   width: 100%;
-// //   height: 100%;
-// //   border: 2px soid yellow;
-// //   // background: linear-gradient(90deg, rgb(110, 17, 0), rgb(221, 28, 28) );
-// //   // gap:0.9rem;
-// //   // padding: 0.5rem;
-// //   // border-radius: 0.3rem;
-// // }
-
-// a > img{
-//   width: 20%;
-//   height:auto;
-//   // color:white;
-//   overflow: visible;  
-//   border: 2px solid red; 
-// }
-
-// .register_text{
-//   height: 100%;
-//   width: 40%;
-//   font-size: 15px;
-//   font-weight: 800;
-//   font-family: $barca-font;
-//   @include flex(space-between);
-//   // display: flex;
-//   // justify-content:space-between;
-//   // align-items: center;
-//   margin-right: 0.7rem;
-//   color: white;
-//   margin-bottom:0.2rem;
-//   text-decoration: none;
-
-// }
-
 .register > .lang{
   @include cursor;
   @include flex(center);
@@ -211,7 +153,6 @@ body {
   color: white;
 }
 .register > .lang:hover{
-  // background:linear-gradient(to top, rgb(245, 42, 42) 0%,rgb(214, 21, 21) 25%, rgb(155, 17, 17) 50%, rgb(170, 6, 6) 75%, rgb(129, 0, 0) 100%);
   background: #ce1f1f;
   transition: all 0.5s ease-in-out ;
 
@@ -241,7 +182,6 @@ body {
 }
 
 .register > .www:hover{
-  // background:linear-gradient(to top, rgb(245, 42, 42) 0%,rgb(214, 21, 21) 25%, rgb(155, 17, 17) 50%, rgb(170, 6, 6) 75%, rgb(129, 0, 0) 100%);
   background: #ce1f1f;
   transition: all 0.5s ease-in-out ;
 
@@ -259,10 +199,7 @@ body {
 .bottom > .big{
   width: 100%;
   height: 90%;
-  // border: 2px solid green;
   background: rgb(26, 34, 70);
-  // position: relative;
-  // padding-inline:3rem 1rem;
   @include flex(center);
 }
 
@@ -271,20 +208,17 @@ body {
   margin-left: 2rem;
 }
 
-.big > .white_nav{
-  height: 100%;
-  width:auto;
-  @include flex(center);
-  margin-left: 0.9rem;
-  // margin-right: 25rem;
-
-}
-.white_nav > ul {
+.white_nav{
   width: auto;
   @include flex(center);
   gap:3rem;
+  border: 2px solid red;
+  padding: 0;
+  height: 100%;
+  margin-right: 5;
 }
-.white_nav > ul li{
+.white_nav > li{
+  width: auto;
   color: whitesmoke;
   font-size: 0.7rem;
   font-family: $barca-font;
@@ -293,72 +227,71 @@ body {
   text-decoration: none;
   list-style: none;
   @include flex(center);
-  // @include cursor;
   gap: 0.2rem;
-  // text-size-adjust: 5rem;
 }
-.white_nav > ul li:nth-child(1):hover ul li:nth-child(2){
+.white_nav > li:hover{
   @include cursor;
   color: #9c9c9c;
-  // .white_nav > ul li:nth-child(2){
-  //   color:rgb(53, 51, 51);
-  // }
-  // .white_nav > ul li:nth-child(3){
-  //   color:rgb(53, 51, 51);
-  // }
-} 
-.big > .yellow_nav{
-  // border: 1px solid green;
-  height: 100%;
-  width: auto;
-  margin-left: 21rem;
-  // border: 1px solid red;
-  // position: absolute;
-  // right:10rem;
-  @include flex(center);
+  ul:nth-child(2){
+  color: #9c9c9c;
+
+  }
 }
-.yellow_nav > ul {
+.yellow_nav{
   width: auto;
   @include flex(center);
   gap:3rem;
+  border: 2px solid red;
+  padding: 0;
+  height: 100%;
+  margin-right: 5;
 }
-.yellow_nav > ul li{
+.yellow_nav > li{
+  width: auto;
   color: rgb(255, 217, 0);
   font-size: 0.7rem;
   font-family: $barca-font;
-  font-weight: 900;
+  font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
   list-style: none;
   @include flex(center);
-  @include cursor;
-
   gap: 0.2rem;
-  // text-size-adjust: 5rem;
 }
+// .yellow_nav {
+//   width: auto;
+//   @include flex(center);
+//   gap:3rem;
+//   border: 2px solid red;
+//   padding: 0;
+// }
+// .yellow_nav >  li{
+//   color: rgb(255, 217, 0);
+//   font-size: 0.7rem;
+//   font-family: $barca-font;
+//   font-weight: 900;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   list-style: none;
+//   @include flex(center);
+//   @include cursor;
+//   gap: 0.2rem;
+// }
 
 .big > .bar{
   height: 60%;
   width: 0.1rem;
   background: gray;
   margin-left:3rem;
-
-  // position: absolute;
-  // right:8.3rem;
-  // @include flex(center);
-
 }
 .big > .search_icon{
-
   height: 90%;
   width: 4.6rem;
-  // border: 2px solid red;
   color: whitesmoke;
   font-size: 1.5rem;
   font-weight: 300;
   @include flex(center);
   @include cursor;
-  margin-left: 0.2rem;
 }
 
 .big > .search_icon:hover{
@@ -368,8 +301,7 @@ body {
 
 .bottom > .small{
   width: 100%;
-  height: 10%; 
-  // border: 2px solid blue;
+  height: 10%;
   background: linear-gradient(90deg, #cd122d 0, #154284); 
 
 }
@@ -379,20 +311,12 @@ body {
 
 /* ====================Start of Container ======================= */
 .container{
-  width: auto;
-  height: 112vh;
+  width: 100%;
+  height: auto;
   background:rgb(24, 20, 48) ;
   // z-index: -5;
   box-sizing: border-box;
 }
-
-.container > img:hover{
-  .text{
-    text-decoration: underline;
-  }
-}
-
-
 .container > img{
   width: 100%;
   height: auto;
@@ -400,6 +324,13 @@ body {
   top: 6rem;
   left: 0;
 }
+// .container > img:hover{
+//   .text{
+//     text-decoration: underline;
+//   }
+// }
+
+
 
 // .container > img:hover{
 //   // @include cursor;
@@ -411,15 +342,13 @@ body {
 
 .container > .overlay{
   width: 100%;
-  height: 12%;
-  position:absolute;
-  // border: 2px solid green;
-  top: 6.6%;
+  min-height: 55%;
+  position: absolute;
+  top: 46%;
   left: 0;
-  background: linear-gradient(to bottom, rgba(14, 12, 32,0.1) 0%, rgb(24, 20, 48,1)69.7%, rgb(24, 20, 48,1) 100%);
+  background: linear-gradient(to bottom, rgba(14, 12, 32, 0.1) 0%, rgb(24, 20, 59) 40%, rgb(24, 20, 48) 50.7%, rgb(24, 20, 48) 100%);
   z-index: 0;
-//  background-color: #181733;
-//  filter: blur(3px);
+  // border: 2px solid red;
 }
 
 .container > img:hover{
@@ -608,7 +537,6 @@ body {
   display: flex;
   flex-direction:column;
   gap: 2rem;
-  // padding-bottom: 50rem;
 }
 
 .big_container > .partners{
@@ -644,7 +572,7 @@ body {
 
 .barcelona{
   width: 95%;
-  height: 220vh;
+  height: auto;
   background-color: white;
   // border: 2px solid rgb(184, 0, 15);
   align-self: center;
@@ -1699,14 +1627,14 @@ body {
 /* ====================Start of NEWS======================= */
 .news{
   width: 97%;
-  height: 100vh;
+  height: auto;
   background-color: white;
   align-self: center;
   @include flex(none);
   flex-direction: column;
   gap: 2rem;
   margin-top: 3rem;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
 .news > span{
@@ -1724,13 +1652,13 @@ body {
 .news > .boxes{
   height: 96.6%;
   width: 96%;
-  // border: 2px solid red;
   @include flex(flex-start);
   display: flex;
   justify-content: center;
   align-items: flex-start ;
   gap: 0.9rem;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 // ====================ARAUHO========================
@@ -2533,16 +2461,23 @@ body {
 
 
 // ============================================MEDIA QUERIES==========================================================
+//Media query for 2xl size
 @media only screen and (max-width:1536px){
   .container{
-    height: 100vh;
+    height: 80vh;
     width: 100%;
+    position: relative;
+    // box-sizing: border-box;
+    // overflow: hidden ;
   }
-  .overlay{
-    height:100%;
-    width: 100%;
-    position: absolute;
-    top: 100%;
+  .container > img{
+    height: auto;
+    object-fit: fill;
+  }
+  .big{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   .logo{
     margin-right: 1rem;
@@ -2550,21 +2485,62 @@ body {
   .white_nav{
     height: 100%;
     width: auto;
-    margin-inline:10rem;
+    margin-inline:4.8rem;
     @include flex(center);
+    gap: 2.5rem;
+    border: 0;
+  }
+  .yellow_nav{
+    height: 100%;
+    width: auto;
+    margin-inline:25rem 5rem;
+    @include flex(center);
+    border: 0;
   }
   .white_nav ul li{
     width: auto;
     height: auto;
     display: flex;
+    margin: 0;
+    gap: -5px;
+  }
+  .container > img{
+   height: auto;
+   width: 100%; 
   }
   .container .text{
-    left: 19%;
+    top: 63%;
+    left: 20%;
+  }
+  .container .bottom_line{
+    top: 72%;
+    left: 45%;
+    gap: 1.5rem;
+  }
+  .bottom_line .yellow{
+    height: 1rem;
+    width: 1rem;
+  }
+  .bottom_line .type{
+    font-size: 1.5rem;
+  }
+  .bottom_line .right_bottom{
+    font-size: 1rem;
+  }
+  .cards{
+    height: 16rem;
+    position: absolute;
+    top: 45rem;
+    left: 2.3rem;
   }
   .big_container{
     width: 100%;
     height: auto;
-    padding-top: 2rem;
+    background: linear-gradient(to bottom,rgb(97, 16, 16) 0%,rgb(24, 12, 53) 5.5%,rgb(19, 12, 48) 100% );
+    // padding-top: 6rem;
+  }
+  .big_container .partners{
+    margin-top: 5rem;
   }
   .photos > img{
     height: 49%;
@@ -2572,11 +2548,132 @@ body {
   }
 }
 
-// @media only screen and (max-width:){
-  
-// }
+//Media query for xl size
+@media only screen and (max-width:1320px){
+  .mid{
+    @include flex(space-between);
+  }
+  .signUp{
+    margin-left: 7.8rem;
+    padding-left:1.5rem;
+    gap: 0;
+  }
+  .signUp > .white{
+    width: 18rem;
+    // border: 2px solid red;
+    margin: 0;
+    padding: 0;
+  }
+  .blue{
+    margin-right: 15px;
+  }
+  .big{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border:2px solid green;
+    gap: 0;
 
+  }
+  .big .logo{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: -0.5rem;
+    left: 0.4rem;
+    // border: 2px solid red;
+  }
+  .white_nav{
+    height: 10%;
+    width: auto;
+    // border: 2px solid red;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -10rem;
+    margin-right: 8rem;
+  }
+  .yellow_nav{
+    height: 10%;
+    width: auto;  
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10rem;
+    padding-left: 5rem;
+    margin-right: 0;
+  }
+  .search_icon{
+    margin-right: -20.9rem;
+  }
+  .container > img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .container .text{
+    left: 16%;
+    font-size: 2rem;
+  }
+  .overlay{
+    height: 20%; 
+    width: 100%;
+    top: 60%;
+    // border:2px solid red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .blue_rectangle{
+    max-height: 290px;
+  }
+  .red_rectangle{
+    max-height: 250px;
+    top: 50rem;
+  }
+  .cards{
+    height: 16rem;
+    position: absolute;
+    top: 37rem;
+    left: 2.3rem;
+  }
+  .big_container .partners{
+    margin-top: 7.1rem;
+    margin-bottom: 0.1rem;
+  }
+}
 
+////Media query for normal size
+@media only screen and (max-width: 1024px){
+  .top{
+    display: none;
+  }
+  .mid{
+    justify-content: flex-end;
+  }
+  .signUp{
+    display: none;
+  }
+  .register{
+    width: 33%;
+  }
+  .yellow_nav{
+    padding: 0;
+    margin-left: 3rem;
+  }
+  .container{
+    box-sizing: border-box;
+    width: 100vw;
+    border: 5px solid red;
+  }
+  .big_container{
+    width: 100%;
+    height: auto;
+  }
+}
 
 
 

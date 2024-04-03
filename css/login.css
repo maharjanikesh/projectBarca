@@ -17,9 +17,13 @@ body {
   gap: 1rem;
 }
 
-.container > img {
-  height: 3.5rem;
+.container > a {
+  height: 5rem;
   width: auto;
+}
+
+img {
+  height: 100%;
 }
 
 .container > .login {
