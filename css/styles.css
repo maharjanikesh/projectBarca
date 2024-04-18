@@ -10,7 +10,7 @@ nav {
   left: 0;
   box-sizing: border-box;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* ====================Start of top Navbar======================= */
@@ -21,6 +21,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: inherit;
 }
 
 .top > a {
@@ -39,6 +40,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: inherit;
 }
 
 .signUp {
@@ -230,16 +232,16 @@ nav {
 .white_nav {
   width: 45%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 3rem;
-  padding: 0;
+  padding-left: 5rem;
   margin: 0;
   height: 100%;
 }
 
 .white_nav > li {
-  height: 50%;
+  height: 70%;
   width: auto;
   color: whitesmoke;
   font-size: 0.7rem;
@@ -267,13 +269,13 @@ nav {
 .about_team {
   visibility: hidden;
   position: absolute;
-  top: 130%;
-  left: -90%;
-  height: 180px;
+  top: 122%;
+  left: -98%;
+  height: 190px;
   width: 220px;
   background: #154284;
   color: whitesmoke;
-  padding-top: 10px;
+  padding-inline: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -283,9 +285,9 @@ nav {
 .about_team::after {
   content: " ";
   position: absolute;
-  top: -11%;
-  left: 46%;
-  border-width: 15px;
+  top: -17%;
+  left: 45%;
+  border-width: 18px;
   border-style: solid;
   border-color: transparent transparent #154284 transparent;
 }
@@ -311,12 +313,12 @@ nav {
 }
 
 .club_info {
-  height: 290px;
-  width: 500px;
+  height: 300px;
+  width: 580px;
   visibility: hidden;
   position: absolute;
-  top: 140%;
-  left: -505%;
+  top: 120%;
+  left: -595%;
   background: #154284;
   color: whitesmoke;
   padding-top: 10px;
@@ -329,9 +331,9 @@ nav {
 .club_info::after {
   content: " ";
   position: absolute;
-  top: -8%;
-  left: 46%;
-  border-width: 13px;
+  top: -12%;
+  left: 45.6%;
+  border-width: 20px;
   border-style: solid;
   border-color: transparent transparent #154284 transparent;
 }
@@ -355,8 +357,8 @@ nav {
   width: 99vw;
   height: 280px;
   position: absolute;
-  top: 135%;
-  left: -455%;
+  top: 120%;
+  left: -415%;
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
@@ -406,6 +408,7 @@ nav {
 }
 
 .yellow_nav > li {
+  height: 80%;
   width: auto;
   color: rgb(255, 217, 0);
   font-size: 0.7rem;
@@ -425,12 +428,12 @@ nav {
 }
 
 .tickandmus {
-  height: 290px;
+  height: 307px;
   width: 500px;
   visibility: hidden;
   position: absolute;
   top: 95%;
-  left: 53%;
+  left: 53.4%;
   background: #154284;
   color: whitesmoke;
   padding-top: 10px;
@@ -566,14 +569,13 @@ main {
   align-items: center;
   gap: 0.8rem;
   margin-top: -1rem;
-  z-index: inherit;
+  z-index: 1;
 }
 
 .bottom_line > .yellow {
   height: 0.8rem;
   aspect-ratio: 1;
   background-color: rgb(247, 242, 0);
-  margin-right: -0.5rem;
   display: flex;
   justify-content: baseline;
   align-items: center;
@@ -600,7 +602,7 @@ main {
 }
 
 .cards {
-  height: 13rem;
+  height: 14rem;
   width: 95%;
   display: flex;
   justify-content: space-between;
@@ -612,7 +614,7 @@ main {
 
 .card {
   height: 100%;
-  width: 16%;
+  width: 19%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -712,10 +714,11 @@ main {
 .big_container {
   height: auto;
   width: 100%;
-  background: linear-gradient(to bottom, rgb(131, 14, 14) 0%, rgb(19, 19, 65) 5.9%, rgb(24, 12, 53) 50%, rgb(19, 12, 48) 100%);
+  background: linear-gradient(to bottom, rgb(131, 14, 14) 0%, rgb(19, 19, 65) 4.9%, rgb(24, 12, 53) 50%, rgb(19, 12, 48) 100%);
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  overflow: hidden;
 }
 
 .big_container > .partners {
@@ -765,6 +768,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+  overflow: hidden;
 }
 
 .barcelona > .heading {
@@ -862,15 +866,16 @@ main {
 
 .barcelona > .matches {
   height: 20rem;
-  width: 100%;
+  width: auto;
   margin-top: 1rem;
   display: flex;
   gap: 0.5rem;
+  overflow: hidden;
 }
 
 .matches > .box1 {
   height: 100%;
-  width: 22rem;
+  width: 300px;
   background: url("/images/result-bg.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -914,7 +919,7 @@ main {
 
 .matches > .box2 {
   height: 100%;
-  width: 22rem;
+  width: 300px;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
   margin-top: -2px;
   display: flex;
@@ -1108,7 +1113,7 @@ main {
 
 .matches > .box3 {
   height: 100%;
-  width: 22rem;
+  width: 300px;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
   margin-top: -2px;
   display: flex;
@@ -1303,7 +1308,7 @@ main {
 
 .matches > .box4 {
   height: 100%;
-  width: 22rem;
+  width: 300px;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.5);
   margin-top: -2px;
   display: flex;
@@ -1499,7 +1504,7 @@ main {
   height: 0.1rem;
   width: 102%;
   margin-left: -2rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
   background-color: rgb(236, 231, 231);
 }
 
@@ -1507,9 +1512,11 @@ main {
   height: 29rem;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 1rem;
+  gap: 3rem;
 }
 
 .team > .bar_tick {
@@ -1526,16 +1533,21 @@ main {
   height: 80%;
   width: 100%;
   display: flex;
-  gap: 1rem;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
   cursor: pointer;
   position: relative;
 }
 
 .photos > img {
-  height: 11.2rem;
-  width: auto;
+  display: list-item;
+  height: auto;
+  width: 23.4%;
   transition: all 0.3s ease-in-out;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .photos > img:hover {
@@ -1579,7 +1591,7 @@ main {
   cursor: pointer;
 }
 
-.barca_store > .lewa {
+.barca_store > .top_photo {
   width: 100%;
   height: auto;
   border-radius: 7px 7px 0 0;
@@ -1618,7 +1630,7 @@ main {
 
 .customize {
   width: 100%;
-  font-size: 0.1rem;
+  font-size: 0.8rem;
   font-weight: 100;
   font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
 }
@@ -1627,188 +1639,7 @@ main {
   height: 5;
   width: 100%;
   border: 1px solid rgb(206, 206, 206);
-}
-
-.sho {
-  font-size: 0.8rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 900;
-  color: blue;
-  font-style: italic;
-  text-transform: uppercase;
-}
-
-.barca_store > .culers {
-  width: 100%;
-  height: auto;
-  border-radius: 7px 7px 0 0;
-}
-
-.kits {
-  height: 60%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.kits > img {
-  height: auto;
-  width: 45%;
-}
-
-.shop_text {
-  height: 60%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.little {
-  width: 100%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 1000;
-  color: black;
-  text-transform: uppercase;
-}
-
-.customize {
-  width: 100%;
-  font-size: 0.8rem;
-  font-weight: 100;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-}
-
-.shop_text > #border_line {
-  height: 5;
-  width: 100%;
-  background: rgb(206, 15, 15);
-  border: 1px solid red;
-}
-
-.sho {
-  font-size: 0.8rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 900;
-  color: blue;
-  font-style: italic;
-  text-transform: uppercase;
-}
-
-.barca_store > .culers {
-  width: 100%;
-  height: auto;
-  border-radius: 7px 7px 0 0;
-}
-
-.kits {
-  height: 60%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.kits > img {
-  height: auto;
-  width: 45%;
-}
-
-.shop_text {
-  height: 60%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.kit {
-  width: 100%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 1000;
-  color: black;
-}
-
-.customize {
-  width: 100%;
-  font-size: 0.8rem;
-  font-weight: 100;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-}
-
-.shop_text > #border_line {
-  height: 5;
-  width: 100%;
-  background: rgb(206, 15, 15);
-  border: 1px solid red;
-}
-
-.sho {
-  font-size: 0.8rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 900;
-  color: blue;
-  font-style: italic;
-  text-transform: uppercase;
-}
-
-.barca_store > .culers {
-  width: 100%;
-  height: auto;
-  border-radius: 7px 7px 0 0;
-}
-
-.kits {
-  height: 60%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.kits > img {
-  height: auto;
-  width: 45%;
-}
-
-.shop_text {
-  height: 60%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.little {
-  width: 100%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 1000;
-  color: black;
-  text-transform: uppercase;
-}
-
-.customize {
-  width: 100%;
-  font-size: 0.8rem;
-  font-weight: 100;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-}
-
-.shop_text > #border_line {
-  height: 5;
-  width: 100%;
-  background: rgb(206, 15, 15);
-  border: 1px solid red;
+  margin-top: 1rem;
 }
 
 .sho {
@@ -1862,7 +1693,7 @@ main {
   margin-bottom: 2rem;
 }
 
-.boxes > .arauho {
+.boxes > .news_box {
   height: 17rem;
   width: 24%;
   display: flex;
@@ -1874,13 +1705,13 @@ main {
   cursor: pointer;
 }
 
-.arauho > img {
+.news_box > img {
   height: 60%;
   width: 100%;
   overflow: hidden;
 }
 
-.arauho > .ara_text {
+.news_box > .ara_text {
   height: 4rem;
   width: 90%;
   font-size: 1rem;
@@ -1930,216 +1761,6 @@ main {
   color: rgb(161, 156, 156);
 }
 
-.boxes > .basketball {
-  height: 17rem;
-  width: 24%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  box-shadow: 2px 0px 2px 2px rgba(2, 2, 2, 0.2);
-  cursor: pointer;
-}
-
-.basketball > img {
-  height: 60%;
-  width: 100%;
-  overflow: auto;
-}
-
-.basketball > .ara_text {
-  height: 4rem;
-  width: 90%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding: 0 1rem;
-  display: flex;
-  align-items: flex-start;
-}
-
-.boxes > .women {
-  height: 17rem;
-  width: 24%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  box-shadow: 2px 0px 2px 2px rgba(2, 2, 2, 0.2);
-  cursor: pointer;
-}
-
-.women > img {
-  height: 60%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.women > .ara_text {
-  height: 4rem;
-  width: 90%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding: 0 1rem;
-  display: flex;
-  align-items: flex-start;
-}
-
-.boxes > .training {
-  height: 17rem;
-  width: 24%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  box-shadow: 2px 0px 2px 2px rgba(2, 2, 2, 0.2);
-  cursor: pointer;
-}
-
-.training > img {
-  height: 60%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.training > .ara_text {
-  height: 4rem;
-  width: 90%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding: 0 1rem;
-  display: flex;
-  align-items: flex-start;
-}
-
-.boxes > .hockey {
-  height: 17rem;
-  width: 24%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  box-shadow: 2px 0px 2px 2px rgba(2, 2, 2, 0.2);
-  cursor: pointer;
-}
-
-.hockey > img {
-  height: 60%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.hockey > .ara_text {
-  height: 4rem;
-  width: 90%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding: 0 1rem;
-  display: flex;
-  align-items: flex-start;
-}
-
-.boxes > .defeat {
-  height: 17rem;
-  width: 24%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  box-shadow: 2px 0px 2px 2px rgba(2, 2, 2, 0.2);
-  cursor: pointer;
-}
-
-.defeat > img {
-  height: 60%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.defeat > .ara_text {
-  height: 4rem;
-  width: 90%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding: 0 1rem;
-  display: flex;
-  align-items: flex-start;
-}
-
-.boxes > .athletics {
-  height: 17rem;
-  width: 24%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  box-shadow: 2px 0px 2px 2px rgba(2, 2, 2, 0.2);
-  cursor: pointer;
-}
-
-.athletics > img {
-  height: 60%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.athletics > .ara_text {
-  height: 4rem;
-  width: 90%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding: 0 1rem;
-  display: flex;
-  align-items: flex-start;
-}
-
-.boxes > .rugby {
-  height: 17rem;
-  width: 24%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 1rem;
-  box-shadow: 2px 0px 2px 2px rgba(2, 2, 2, 0.2);
-  cursor: pointer;
-}
-
-.rugby > img {
-  height: 60%;
-  width: 100%;
-  overflow: hidden;
-}
-
-.rugby > .ara_text {
-  height: 4rem;
-  width: 90%;
-  font-size: 1rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding: 0 1rem;
-  display: flex;
-  align-items: flex-start;
-}
-
 /* ====================End of NEWS======================= */
 .trophies {
   height: 6rem;
@@ -2158,7 +1779,7 @@ main {
 
 .trophies > .trophy {
   min-height: 6rem;
-  max-width: 22%;
+  max-width: 24%;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
@@ -2174,37 +1795,37 @@ main {
 }
 
 .text_background {
-  height: 0.1rem;
-  width: 90%;
-  padding: 1rem;
+  height: 0.4rem;
+  width: 95%;
+  padding: 0.8rem 0.5rem;
   background-color: black;
   position: absolute;
-  top: 30%;
+  top: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.text_background > .laliga {
-  font-size: 0.8rem;
+.text_background > .trophy_type {
+  font-size: 0.7rem;
   font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 700;
   color: white;
   text-transform: capitalize;
 }
 
-.text_background > .laliga:nth-child(2) {
-  font-size: 4rem;
+.text_background > .trophy_type:nth-child(2) {
+  font-size: 2.7rem;
   font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 700;
   color: yellow;
   text-transform: capitalize;
   position: absolute;
-  top: -1.2rem;
-  left: 52%;
+  top: -0.6rem;
+  left: 64%;
 }
 
-.text_background > .laliga:nth-child(3) {
+.text_background > .trophy_type:nth-child(3) {
   font-size: 0.6rem;
   font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 800;
@@ -2212,122 +1833,41 @@ main {
   text-transform: uppercase;
 }
 
-.text_background > .laliga:nth-child(4) {
+.text_background > .laliga {
   height: auto;
-  width: 4rem;
+  width: 5rem;
   position: absolute;
-  top: -1.5rem;
-  left: 31%;
+  top: -2.3rem;
+  left: 29%;
 }
 
 .text_background > .ucl {
-  font-size: 0.6rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  color: white;
-  text-transform: capitalize;
-}
-
-.text_background > .ucl:nth-child(2) {
-  font-size: 4rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  color: yellow;
-  text-transform: capitalize;
-  position: absolute;
-  top: -1.2rem;
-  left: 62%;
-}
-
-.text_background > .ucl:nth-child(3) {
-  font-size: 0.6rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 800;
-  color: white;
-  text-transform: uppercase;
-}
-
-.text_background > .ucl:nth-child(4) {
   height: 6.5rem;
   width: auto;
   position: absolute;
   top: -2.3rem;
-  left: 40%;
+  left: 44%;
 }
 
 .text_background > .club_world_cup {
-  font-size: 0.6rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  color: white;
-  text-transform: capitalize;
-}
-
-.text_background > .club_world_cup:nth-child(2) {
-  font-size: 4rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  color: yellow;
-  text-transform: capitalize;
-  position: absolute;
-  top: -1.2rem;
-  left: 56%;
-}
-
-.text_background > .club_world_cup:nth-child(3) {
-  font-size: 0.6rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 800;
-  color: white;
-  text-transform: uppercase;
-}
-
-.text_background > .club_world_cup:nth-child(4) {
   height: 4.6rem;
   width: auto;
   position: absolute;
   top: -1.4rem;
-  left: 40%;
+  left: 44%;
 }
 
 .text_background > .copa_del_rey {
-  font-size: 0.6rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  color: white;
-  text-transform: capitalize;
-}
-
-.text_background > .copa_del_rey:nth-child(2) {
-  font-size: 4rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 700;
-  color: yellow;
-  text-transform: capitalize;
+  height: auto;
+  width: 5rem;
   position: absolute;
-  top: -1.2rem;
-  left: 50%;
-}
-
-.text_background > .copa_del_rey:nth-child(3) {
-  font-size: 0.6rem;
-  font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
-  font-weight: 800;
-  color: white;
-  text-transform: uppercase;
-}
-
-.text_background > .copa_del_rey:nth-child(4) {
-  height: 5.5rem;
-  width: auto;
-  position: absolute;
-  top: -1.7rem;
-  left: 28%;
+  top: -2.3rem;
+  left: 34%;
 }
 
 .social_media {
   height: 10rem;
-  width: 80%;
+  width: 100%;
   align-self: center;
   padding: 1rem;
   display: flex;
@@ -2351,7 +1891,7 @@ main {
 
 .medias {
   height: 7rem;
-  width: 95%;
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2566,10 +2106,10 @@ main {
 
 .copyright {
   height: 3rem;
-  width: 18%;
+  width: auto;
   margin-left: 0.7rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
   margin-top: 2rem;
@@ -2582,7 +2122,7 @@ main {
 
 .copyright > span {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: fcb-extra-bold, Arial, Helvetica Neue, Helvetica, sans-serif;
   font-weight: 700;
   color: whitesmoke;
@@ -2590,17 +2130,17 @@ main {
 
 .terms {
   height: 2rem;
-  width: 85%;
+  width: 97%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 2rem;
-  margin-bottom: -0.9rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
 }
 
 .terms > .left {
   height: 100%;
-  width: 40%;
+  width: auto;
 }
 
 .left > p {
@@ -2616,7 +2156,7 @@ main {
 
 .terms > .right {
   height: 100%;
-  width: 60%;
+  width: auto;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -2647,4 +2187,162 @@ main {
   background: linear-gradient(90deg, #cd122d 0, #154284);
 }
 
-/* ====================End of big_container ======================= *//*# sourceMappingURL=styles.css.map */
+/* ====================End of big_container ======================= */
+@media only screen and (max-width: 1024px) {
+  .nav {
+    padding-bottom: none;
+  }
+  .top {
+    display: none;
+  }
+  .mid {
+    justify-content: flex-end;
+  }
+  .signUp {
+    display: none;
+  }
+  .register {
+    min-width: 40%;
+  }
+  .white_nav {
+    padding: 0.9rem;
+    width: 40%;
+    gap: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .club_info {
+    width: 300px;
+    left: -420%;
+    top: 125%;
+    font-size: 0.6rem;
+  }
+  .yellow_nav {
+    padding-inline: 0.9rem;
+    width: 40%;
+    gap: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .white_nav li, .yellow_nav li {
+    width: auto;
+  }
+  main {
+    margin-top: 7rem;
+  }
+  .container {
+    margin-top: none;
+  }
+  .barcelona {
+    padding: none !important;
+  }
+  .partners {
+    margin-top: 3.9rem !important;
+  }
+  .team {
+    height: 21.5rem !important;
+  }
+  .photos img {
+    margin: none;
+  }
+  .shop {
+    height: 80%;
+  }
+  .barca_store {
+    gap: none;
+    box-sizing: border-box;
+  }
+  .barca_store .top_photo {
+    width: 100%;
+    height: 25%;
+  }
+  .barca_store .kits {
+    height: 50%;
+    padding: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: none;
+    box-sizing: border-box;
+  }
+  .shop_text {
+    height: 40%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .shop_text .kit {
+    height: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .shop_text .customize {
+    height: 50% !important;
+    margin: none !important;
+  }
+  .shop_text #border_line {
+    visibility: hidden;
+  }
+  .sho {
+    margin-top: -10px;
+  }
+  .news_box {
+    min-height: 21rem;
+    min-width: 47%;
+  }
+  .news_box img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+  }
+  .news_box .ara_text {
+    font-size: 1.3rem;
+  }
+  .left_footer .type {
+    font-size: 1rem;
+  }
+  .right_footer {
+    font-size: 0.8rem;
+  }
+  .trophies {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .trophies .trophy {
+    height: 5rem;
+    min-width: 47%;
+  }
+  .trophy img {
+    width: 100%;
+    height: 100%;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .trophy .text_background {
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text_background .trophy_type {
+    font-size: 1rem;
+  }
+  .trophy_type:nth-child(2) {
+    left: 56% !important;
+  }
+  .laliga {
+    left: 40% !important;
+  }
+  .ucl {
+    left: 40% !important;
+  }
+  .copa_del_rey {
+    left: 40% !important;
+  }
+  .medias {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
